@@ -61,7 +61,7 @@ import java.util.Stack;
 public class ConvertSourceToTargetString {
 
 	public static void main(String args[]) {
-		convertString("ABCDEFG", "ABDDFGH");
+		convertString("ANISH", "MANISH");
 	}
 
 	public static void convertString(String source, String target) {
