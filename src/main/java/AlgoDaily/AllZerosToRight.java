@@ -24,7 +24,7 @@ public class AllZerosToRight {
 		}
 	}
 
-	static int[] moveZeros(int[] a) {
+	static void moveZeros(int[] a) {
 		int temp_index = 0;
 
 		for (int i = 0; i < a.length; i++) {
@@ -37,8 +37,6 @@ public class AllZerosToRight {
 		for (int i = temp_index; i < a.length; i++) {
 			a[i] = 0;
 		}
-
-		return a;
 	}
 
 }
