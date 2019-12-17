@@ -21,7 +21,7 @@
  * 
  * Step 2:
  * *******
- * Now loop over the converted String array and check whether all the string are equal or not
+ * Now loop over the converted String array and check whether all the strings are equal or not
  * 
  * 
  */

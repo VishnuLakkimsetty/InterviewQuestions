@@ -1,5 +1,7 @@
 // https://algodaily.com/challenges/find-duplicate-words/javascript
 
+// https://medium.com/@vishnulakkimsetty/find-the-duplicates-word-in-a-string-using-java-8ac21147b735
+
 /*
  * Solution Approach
  * *****************
