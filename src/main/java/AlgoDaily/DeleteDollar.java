@@ -24,6 +24,16 @@
  * Now loop over the converted String array and check whether all the strings are equal or not
  * 
  * 
+ * Time Complexity: As we are looping around the array of strings it takes O(N) time 
+ * and for each string to do the $ delete operation and to create a new string with 
+ * remaining characters it takes O(M*M/2) time per string where M is the length of the 
+ * longest string in the given string array. So the total time complexity of the program is O(N*M²).
+ * 
+ * 
+ * Space Complexity: As we are using the stack for the delete operation and char array 
+ * to create a modified string, it takes O(M+M) space where M is the length of the longest 
+ * string in the given string array. So the total space complexity of the program is O(M).
+ * 
  */
 
 package main.java.AlgoDaily;
