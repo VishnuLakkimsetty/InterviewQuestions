@@ -26,8 +26,8 @@
  * 
  * Time Complexity: As we are looping around the array of strings it takes O(N) time 
  * and for each string to do the $ delete operation and to create a new string with 
- * remaining characters it takes O(M*M/2) time per string where M is the length of the 
- * longest string in the given string array. So the total time complexity of the program is O(N*M²).
+ * remaining characters it takes O(M) time per string where M is the length of the 
+ * longest string in the given string array. So the total time complexity of the program is O(N*M).
  * 
  * 
  * Space Complexity: As we are using the stack for the delete operation and char array 
@@ -43,7 +43,7 @@ import java.util.Stack;
 public class DeleteDollar {
 
 	public static void main(String[] args) {
-		String[] str = { "f$ec", "ec$" };
+		String[] str = { "$fec", "fec" };
 		System.out.println(isDollarDeleteEqual(str));
 	}
 
@@ -68,6 +68,8 @@ public class DeleteDollar {
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) == '$' && !s.isEmpty()) {
 				s.pop();
+			} else if (str.charAt(i) == '$' && s.isEmpty()) {
+				continue;
 			} else {
 				s.push(str.charAt(i));
 			}
