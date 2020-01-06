@@ -4,7 +4,9 @@
  * Solution Approach
  * ******************
  * 
- * Store the elements of both array in a map, if it is a reoccurence then simply increment the count by 1
+ * Store the unique elements of 1st array in a Map with count as one
+ * 
+ * Now store the unique elements of 2nd array in the same with coun 
  * 
  * Return the keys whose values are greater than one
  * 
@@ -26,8 +28,7 @@ public class ArrayIntersection {
 		Map<Integer, Integer> m = new HashMap<>();
 		for(int i=0;i<arr1.length;i++) {
 			if(m.containsKey(arr1[i])) {
-				int v = m.get(arr1[i]);
-				m.put(arr1[i], ++v);
+				continue;
 			} else {
 				m.put(arr1[i], 1);
 			}

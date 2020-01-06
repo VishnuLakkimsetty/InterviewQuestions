@@ -9,8 +9,8 @@
  * 
  * Algorithm used is recursion
  * 
- * Time Complexity: 
- * Space Complexity:
+ * Time Complexity: O(logN) where N is given number
+ * Space Complexity: O(1)
  */
 
 package main.java.AlgoDaily;
