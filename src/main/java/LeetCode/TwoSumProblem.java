@@ -35,7 +35,7 @@ public class TwoSumProblem {
 		}
 		
 		for(int i=0;i<a.length;i++) {
-			if(map.containsKey(k-a[i])) {
+			if(map.containsKey(k-a[i]) && map.get(k-a[i]) != i) {
 				return new int[] {i,map.get(k-a[i])};
 			}
 		}
